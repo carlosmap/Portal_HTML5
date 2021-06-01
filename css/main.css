@@ -1,0 +1,282 @@
+/* CSS Document */
+
+/* Fuentes */
+/* font-family: 'Open Sans Condensed', sans-serif; */
+/* font-family: 'Orbitron', sans-serif; */
+
+/* Etiquetas */
+
+body {
+	background-image: url(../img/colores.jpg); /* no-repeat top center*/
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-size: cover;
+	font-size: 14 px; /* se toma como tamaño por defecto en toda la pagina entonces 1me=14px */
+}
+h1, h2, h3, h4, h5, p, figure {
+	margin: 0;
+}
+
+figure
+{
+	background: url(../img/logo-html5-3d.jpg) no-repeat 0 18%;
+	height:150px; 
+	width:700px;
+	background-size: cover;
+}
+
+figcaption
+{
+	background: rgba(255,255,255, 0.5);
+	padding:10px;
+	border-radius:10px 0 10px 0;
+	display:inline-block;
+	font-style:italic;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+h1 {
+	font-family: 'Orbitron', sans-serif;
+	font-size: 2.3em;
+	font-weight: 100;
+	padding: 10px 0 0 20px;
+	text-shadow: 0 0 5px black;
+	color: white;
+}
+h2 {
+	font-family: 'Open Sans Condensed', sans-serif;
+	text-align: right;
+	font-weight: normal;
+	padding: 10px 20px 0 0;
+	text-shadow: 0 0 10px rgba(0,0,0,1); /* black; */
+	color:white;
+}
+
+h3
+{
+	font-family: 'Open Sans Condensed', sans-serif;
+	padding: 10px 20px 10px 20px;
+	font-weight:200;
+	
+/*	text-shadow: 2px 2px 0 gray; */
+	font-size:1.6em;	
+}
+
+h3::before
+{
+	content:" << ";
+	color:red;	
+}
+
+
+h3::after
+{
+	content:" >> ";
+	color:red;
+}
+
+
+h5
+{
+	font-family: 'Open Sans Condensed', sans-serif;
+	text-align:center;
+	padding: 10px 0 0 0;
+	font-weight:100;
+	text-shadow: 0 0 10px black;
+	color:white;
+	font-size:1.1em;	
+}
+
+p
+{
+		font-family: 'Open Sans Condensed', sans-serif;
+		padding: 0 20px 20px 20px;
+		line-height:150%;
+
+}
+article p::first-letter
+{
+	color:red;
+	font-family: 'Open Sans Condensed', sans-serif;	
+	font-size:3em;
+	float:left;
+	padding:10px 10px 0 0;
+}
+
+article p::first-line
+{
+	color:green;	
+}
+
+article p::selection
+{
+	color:white;
+	background:#234453;
+}
+header {
+	width: 960px;
+	heigth: 120px;
+	background: rgba(255,255,255,0.5); /*Color de fondo del banner */
+	border-radius: 0 0 20px 20px; /* bordes de un elemento */
+	box-shadow: 5px 5px 5px black;
+	background: linear-gradient( rgba(23,44,53,0.5), rgba(251,196,41, 0.5) );	
+}
+
+nav
+{
+	width:960px;
+	height:40px; 
+	margin:5px 0 0 0;
+/*	background:white;	 */
+}
+nav li
+{
+		list-style:none;
+		float:left;
+		font-family: 'Open Sans Condensed', sans-serif;
+}
+nav a 
+{
+	background:black; 
+	padding:8px;
+	margin:3px;
+	display:block;
+	font-weight:bold;
+
+	
+	border-radius: 10px;
+	text-decoration:none;
+	background: rgba(42,94,107,0.6); /*Color de fondo del transparente*/	
+	
+
+}
+nav ul
+{
+	padding:0;
+ 	width:920px; 
+/*	background:fuchsia; */
+	height:40px;
+	margin:auto;
+}
+
+section
+{
+/*	
+	margin:5px 0 0 0;
+	width: 960px;
+*/	
+	height: 500px;
+/*	background:white;
+*/
+}
+
+article
+{
+	width:700px;
+	height:500px;
+/*	background:#37514E;
+*/
+	background: rgba(255,255,255,0.5); /*Color de fondo del banner */
+	margin:0 10px 0 0;
+	float:left;	
+	border-radius:20px 0 0 0;
+	box-shadow: 5px 5px 5px black;
+	overflow:hidden;
+}
+
+aside
+{
+	
+		width:250px;
+		height:500px;
+		background:#37514E;
+		float:left;	
+		border-radius:0 20px  0 0 ;			
+		overflow:hidden;
+}
+
+footer
+{
+	width: 960px;
+	height:48px;
+/*	background:white;
+*/
+	background: rgba(255,255,255,0.7); /*Color de fondo del banner */
+	margin:20px 0 0 0;		
+	box-shadow: 5px 5px 5px black;	
+	border-radius:0 0 20px  20px ;	
+	background: linear-gradient( rgba(23,44,53,0.5), rgba(251,196,41, 0.5) );	
+}
+
+/* ID */
+#contenedor {
+	width: 960px;
+	height: auto;
+	/*	background:beige;
+*/
+	margin: auto;
+}
+
+
+/* Clases */
+
+.activo
+{
+	color:#163142;
+	background: rgba(121,121,106,0.6); 
+	box-shadow:0 0 10px rgba(0,0,0,1) inset;
+}
+
+/* SeudoClases */
+a:link
+{
+	color:white;
+}
+a:visited
+{
+	color:white;	
+}
+a:hover
+{
+	color:#163142;
+	background: rgba(121,121,106,0.6); 
+	
+}
+a:active
+{
+		color:yellow;
+}
+
+/*
+@import url(https://fonts.googleapis.com/css?family=Gloria+Hallelujah);
+article div 
+{
+	width:100px;
+	height:100px;
+	display:inline-block;	
+	margin:10px;
+	box-shadow: 5px 5px 5px black;	
+	color:black;
+	font-family: 'Gloria Hallelujah', cursive;		
+}
+
+#uno
+{
+		background: linear-gradient( rgba(115,255,115,0.4), rgba(255,255,153,0.5));
+}
+
+#dos
+{
+	background: linear-gradient( rgba(255,115,255,0.4), rgba(77,210,255,0.5));
+}
+
+#tres
+{
+	background: linear-gradient( rgba(255,185,115,0.4), rgba(220,15,255,0.5));	
+}
+
+#cuatro
+{
+	background:linear-gradient(red, black 50%);	
+}
+*/
