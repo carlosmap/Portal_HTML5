@@ -27,6 +27,6 @@ Proyecto realizado durante el curso Cymetria Training - Diplomado diseño web, e
 </div>
 
 
-## Tecnologias
+## Tecnologías
 Para el desarrollo de este sitio se utilizaron las tecnologías HTML Y CSS.
 
